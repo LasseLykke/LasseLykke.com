@@ -1,0 +1,44 @@
+/* CSS RESET */
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --feature: #e4ab22;
+}
+
+.wrapper {
+    height: 100vh;
+    width: auto;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+
+}
+
+.link-icon {
+    padding: 10px;
+    transition: 200ms;
+    margin-bottom: 3px;
+  }
+  
+  .link-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .link-icon:active {
+    transform: translateY(0.5px);
+  }
