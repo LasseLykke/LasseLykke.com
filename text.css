@@ -7,7 +7,7 @@ p {
 }
 
 .bigheader {
-    color: var(--black);
+    color: var(--white);
     font-size: 4rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -16,7 +16,7 @@ p {
 }
 
 .smallheader {
-    color: var(--black);
+    color: var(--white);
     font-size: 0.79rem;
     text-transform: uppercase;
     font-weight: 100;

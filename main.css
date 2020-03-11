@@ -16,7 +16,7 @@
 .wrapper {
     height: 100vh;
     width: auto;
-    background-color: var(--white);
+    background-color: var(--black);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +27,7 @@
 .button {
     background: var(--white);
     padding: 1em 3em;
-    margin-top: 20px;
+    margin-top: 60px;
     color: var(--black);
     border: 0;
     border-radius: 0.2px;
