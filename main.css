@@ -8,12 +8,18 @@
 
 
 :root {
-    --black: #000000;
+    --black: #000;
     --white: #ffffff;
+    --white-20: #ededed;
     --feature: #e4ab22;
+
+    --underline: #f1f1f1;
+
 }
 
-.wrapper {
+/* ==== LANDING SECTION ==== */
+
+.landing {
     height: 100vh;
     width: auto;
     background-color: var(--black);
@@ -23,7 +29,6 @@
     align-items: center;
 }
 
-/* ==== MODAL ==== */
 .button {
     background: var(--white);
     padding: 1em 3em;
@@ -46,77 +51,41 @@
     color: var(--black);
     transform: scale(1.1);
   }
-  
-  
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-  
-  .modal-content {
-    margin: 10% auto;
-    width: 90%;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-    animation-name: modalopen;
-    animation-duration: 0.3s;
-  }
 
-  .modal-header h2,
-  .modal-footer h3 {
-    margin: 0;
+.info-bar {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 20px;
+
+}
+
+.link-icon {
+    padding: 7px;
+    padding-bottom: 15px;
+    transition: 200ms;
+    margin-bottom: 3px;
   }
   
-  .modal-header {
-    background: var(--white);
-    padding: 15px;
-    color: #fff;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+  .link-icon:hover {
+    transform: scale(1.2);
   }
   
-  .modal-body {
-    background-color: var(--white);
-    width: 100%;
+  .link-icon:active {
+    transform: translateY(0.5px);
   }
   
-  .modal-footer {
-    background: var(--white);
-    padding: 10px;
-    color: #fff;
-    text-align: center;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+ 
+  /* ==== ABOUT SECTION ==== */
+
+  .about_section {
+    height: 100vh;
+    background-color: var(--black);
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  
-  .close {
-    float: right;
-    font-size: 30px;
-    color: var(--black);
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  @keyframes modalopen {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
   .contentsection {
       width: 100%;
       max-width: 900px;
@@ -139,46 +108,9 @@
   .content_horizontallist > div {
       flex: 1;
       padding: 0px 30px;
-      border-right: 1px solid rgba(0,0,0,0.1)
+      border-right: 1px solid rgba(252, 252, 252, 0.1)
   }
   .content_horizontallist > div:last-child {
       border-right: none;
   }
-  
-  .icon_wrapper.right {
-      text-align: right;
-  }
-  .icon_wrapper.left {
-      text-align: left;
-  }
-  .icon_wrapper.right img {
-      height: 40px;
-      margin-left: 10px;
-  }
-  .icon_wrapper.left img {
-      height: 40px;
-      margin-right: 10px;
-  }
 
-
-
-footer {
-    position: fixed;
-    bottom: 0;
-
-}
-
-.link-icon {
-    padding: 7px;
-    padding-bottom: 15px;
-    transition: 200ms;
-    margin-bottom: 3px;
-  }
-  
-  .link-icon:hover {
-    transform: scale(1.2);
-  }
-  
-  .link-icon:active {
-    transform: translateY(0.5px);
-  }
