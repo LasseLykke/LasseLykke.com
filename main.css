@@ -76,10 +76,11 @@
 /* ==== ABOUT SECTION ==== */
 
 .about_section {
-  height: 100%;
+  height: 100vh;
   background-color: var(--black);
   width: auto;
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(2fr);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -92,10 +93,6 @@
   margin: 0 auto;
   }
 
-.contentsection.fill{
-  max-width: none;
-  padding: 0;
-}
 
 .content_horizontallist {
   width: 100%;
@@ -118,5 +115,30 @@
 
   
  
-  
+ /* ==== MEDIA QUERY ==== */
+ 
 
+ /* Small Devices, Tables */
+@media only screen and (max-width : 768px) {
+
+}
+ 
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.about_section {
+  height: 100%;
+  background-color: var(--black);
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+/* Custom, Phone Retina */
+@media only screen and (max-width : 320px) {
+
+}
