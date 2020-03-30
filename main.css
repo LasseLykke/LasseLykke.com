@@ -38,8 +38,8 @@
 .button {
     background: none;
     padding: 1em 3em;
-    color: var(--black);
-    border: 1px solid var(--white);
+    color: var(--white);
+    border: 0.5px solid var(--white);
     border-radius: 0.2px;
     cursor: pointer;
     font-family: 'Fira-sans', sans-serif;
@@ -54,7 +54,7 @@
   .button:hover {
     background: var(--white);
     color: var(--black);
-    transform: scale(1.1);
+    transform: scale(1.08);
   }
 
 .info-bar {
@@ -109,11 +109,6 @@
   .about > div:last-child {
     border-right: none;
   }
-
-footer {
-  height: 50vh;
-  background-color: var(--background);
-}
 
   /* ==== MEDIA QUERY ==== */
  
