@@ -35,27 +35,6 @@
   margin-top: 40px;
 }
 
-.btn-1 {
-  display: flex;
-	justify-content: center; 
-	align-items: center;
-  flex-direction: column;
-  background: none;
-  padding: 1em 3em;
-}
-
-
-.btn-1 a {
-	text-decoration: none;
-	color: #ffffff;
-	border: 0.1px solid #ffffff;
-	padding: 15px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	position: relative;
-  display: inline-block;
-}
-
 button {
 	position: relative;
   z-index: 3;
@@ -70,37 +49,57 @@ button {
   line-height: 1.3em;
 }
 
-.btn-1 a::before {
-	content: "";
-	position: absolute;
-	top: 5px;
-	left: -2px;
-	width: calc(100% + 6px);
-	height: calc(100% - 10px);
-	background-color: #000000;
-	transition: all 0.3s ease-in-out;
-	transform: scaleY(1);
-}
+  .btn-1 {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    background: none;
+    padding: 1em 3em;
+  }
 
-.btn-1 a:hover::before {
-  transform: scaleY(0);
-}
+  .btn-1 a {
+    text-decoration: none;
+    color: #ffffff;
+    border: 0.1px solid #ffffff;
+    padding: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+  }
 
-.btn-1 a::after {
-	content: "";
-	position: absolute;
-	left: 5px;
-	top: -5px;
-	width: calc(100% - 10px);
-	height: calc(100% + 10px);
-	background-color: #000000;
-	transition: all 0.3s ease-in-out;
-	transform: scaleX(1);
-}
+  .btn-1 a::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -2px;
+    width: calc(100% + 6px);
+    height: calc(100% - 10px);
+    background-color: #000000;
+    transition: all 0.3s ease-in-out;
+    transform: scaleY(1);
+  }
 
-.btn-1 a:hover::after {
-  transform: scaleX(0);
-}
+  .btn-1 a:hover::before {
+    transform: scaleY(0);
+  }
+
+  .btn-1 a::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: -5px;
+    width: calc(100% - 10px);
+    height: calc(100% + 10px);
+    background-color: #000000;
+    transition: all 0.3s ease-in-out;
+    transform: scaleX(1);
+  }
+
+  .btn-1 a:hover::after {
+    transform: scaleX(0);
+  }
 
 .info-bar {
     position: absolute;
