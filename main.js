@@ -1,3 +1,6 @@
+/* MODAL 
+*
+*/
 // Get DOM Elements
 const modal = document.querySelector('#about-modal');
 const modalBtn = document.querySelector('#modal-btn');
