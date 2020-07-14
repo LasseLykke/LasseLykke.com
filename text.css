@@ -16,6 +16,11 @@ p {
     font-weight: 100;
 }
 
+::selection {
+    background-color: var(--white-20);
+    color: var(--black);
+}
+
 a, .Projects {
     text-decoration: none;
     font-family: 'Fira Sans', sans-serif;
