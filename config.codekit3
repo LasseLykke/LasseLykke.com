@@ -219,26 +219,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"/text-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/text-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/text.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/text-min.css",
-		"oF": 0,
-		"oS": 3
 		}
 	},
 "hooks": [
