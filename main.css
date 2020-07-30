@@ -37,7 +37,6 @@
 
 button {
 	position: relative;
-  z-index: 3;
   color: var(--white);
   background: none;
   border: none;
@@ -127,6 +126,7 @@ button {
 .about-wrapper {
   height: 100vh;
   background-color: var(--background);
+  z-index: 1;
 }
 
   .about {
@@ -139,7 +139,7 @@ button {
     margin: 0 auto;
     padding: 40px;
     align-items: center;
-    justify-content: center;
+    z-index: 1;
   }
   
   .about > div {
@@ -195,6 +195,55 @@ button {
   border-right: none;
 }
 }
+
+
+/*Main container before overlay*/
+.main {
+	background: var(--primary);
+	color: white;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	z-index: 0;
+	overflow: hidden;
+}
+
+/* Overlay wrapper style container*/
+.wrapper-container {
+	position: fixed;
+  /*height: 100vh;*/
+  width: 0;
+  left: 0;
+  top: 0;
+	background: pink;
+	transition: 300ms ease;
+	overflow-x: hidden; /* Disable the vertical scroll */
+}
+
+/* Placere indenfor for overlay */
+.overlay-content {
+	position: relative;
+  top: 10%;
+  height: 100vh;
+	width: 100%;
+	text-align: center;
+	color: black;
+	margin-top: 30px;
+}
+
+
+.closebtn{
+  position:absolute;
+  top:55px;
+  right:45px;
+	font-size:25px !important;
+	color: white;
+  text-decoration: none;
+  z-index: 1;
+}
+
+
 
 /* Custom, Phone Retina */
 @media only screen and (max-width : 320px) {
