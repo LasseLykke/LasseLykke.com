@@ -82,7 +82,6 @@ body {
 
 /* Overlay wrapper style container*/
 .wrapper-container {
-  height: 100%;
 	width: 0;
 	position: fixed;
 	z-index: 1;
@@ -101,7 +100,6 @@ body {
 	text-align: center;
 	color: black;
   margin-top: 30px;
-  max-width: 1200px;
   background: var(--background);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -110,18 +108,18 @@ body {
   padding: 40px;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 
 .about > div {
   flex: 1;
   padding: 0px 30px;
-  border-right: 1px solid rgba(252, 252, 252, 0.1)
+  border-right: 1px solid rgba(252, 252, 252, 0.1);
 }
 
 .about > div:last-child {
   border-right: none;
 }
-
 
 .closebtn{
   position:absolute;
@@ -129,7 +127,7 @@ body {
   right:45px;
 	font-size:25px !important;
 	color: white;
-	text-decoration: none;
+  text-decoration: none;
 }
 
 button {
