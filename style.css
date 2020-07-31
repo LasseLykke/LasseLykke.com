@@ -42,25 +42,16 @@ body {
   }
 
 button {
-position: relative;
-color: var(--white);
-background: none;
-border: none;
-cursor: pointer;
-font-family: 'Fira-Sans' sans-serif;
-text-transform: uppercase;
-font-weight: 800;
-text-decoration: none;
-letter-spacing: 0.3em;
-line-height: 1.3em;
-display: inline-block;
-padding: 1em 3em;
-}
-
-.btn-1 {
+  position: relative;
+  color: var(--white);
   background: none;
-  border: 1px solid var(--white-20);
-  color: black;
+  border: none;
+  cursor: pointer;
+  font-family: 'Fira-sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.3em;
+  line-height: 1.3em;
 }
 
 
