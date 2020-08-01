@@ -44,7 +44,7 @@ body {
 button {
   position: relative;
   color: var(--white);
-  background: none;
+  background: transparent;
   border: none;
   cursor: pointer;
   font-family: 'Fira-sans', sans-serif;
@@ -52,6 +52,16 @@ button {
   font-weight: 800;
   letter-spacing: 0.3em;
   line-height: 1.3em;
+  display: flex;
+  padding: 20px 45px;
+  border: 1px solid var(--feature); 
+}
+
+.btn_underline {
+  width: 100%;
+  height: 1px;
+  margin-top: 5px;
+  background-color:var(--white-20);
 }
 
 
