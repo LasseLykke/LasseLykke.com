@@ -20,7 +20,7 @@
 body {
 	padding: 0;
 	margin: 0;
-	border: 0;
+  border: 0;
 }
 
 /* ==== LANDING SECTION ==== */
@@ -105,7 +105,7 @@ button {
 	left: 0;
 	top: 0;
 	transition: 250ms ease;
-  overflow-x: hidden; /* Disable the vertical scroll */
+  overflow-y: hidden; /* Disable the vertical scroll */
 }
 
 /* Placere indenfor for overlay */
@@ -164,6 +164,12 @@ button {
   align-items: center;
 }
 
+.wrapper-container {
+ overflow-y: scroll;
+ height: 100%;
+}
+
+
 .about, .overlay-content {
   height: 100%;
   max-width: 960px;
@@ -174,6 +180,11 @@ button {
   margin: 0 auto;
   align-items: center;
   justify-content: center;
+}
+
+.overlay-content {
+  overflow-y:scroll;
+  height: 100vh;
 }
 
 .about > div {
