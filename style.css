@@ -40,33 +40,6 @@ body {
   margin-top: 40px;
   }
 
-.info-bar {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  position: absolute;
-  bottom: 0;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 20px;
-  text-align: center;
-}
-
-.link-icon {
-  padding: 15px;
-  padding-bottom: 15px;
-  transition: 200ms;
-  margin-bottom: 3px;
-  max-height: 50px;
-  max-width: 50px;
-}
-  
-.link-icon:hover {
-  transform: scale(1.2);
-}
-  
-.link-icon:active {
-  transform: translateY(0.5px);
-}
 
 /*Main container before overlay*/
 .main {
@@ -124,6 +97,36 @@ body {
   text-decoration: none;
 }
 
+.info-bar {
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+}
+
+.info-bar > div {
+  align-items: center;
+  padding-top: 2px;
+}
+
+.link-icon {
+  padding: 15px;
+  padding-bottom: 15px;
+  transition: 200ms;
+  margin-bottom: 3px;
+  max-height: 50px;
+  max-width: 50px;
+}
+  
+.link-icon:hover {
+  transform: scale(1.2);
+}
+  
+.link-icon:active {
+  transform: translateY(0.5px);
+}
 
 /* ==== MEDIA QUERY ==== */
 
