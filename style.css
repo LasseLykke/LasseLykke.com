@@ -40,6 +40,21 @@ body {
   margin-top: 40px;
   }
 
+.about-me {
+  padding: 20px 40px;
+  color: #ddd;
+  border: 1px solid #333;
+  background: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 10rem;
+  transition: 200ms ease-in-out;
+}
+
+.about-me:hover {
+  border: 1px solid #ddd;
+}
+
 
 /*Main container before overlay*/
 .main {
