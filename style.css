@@ -145,9 +145,63 @@ body {
 
 /* ==== MEDIA QUERY ==== */
 
+/* Big phones in landscape mode*/
+@media only screen and (max-width : 813px) {
+  .about, .overlay-content {
+    height: 100%;
+    max-width: 960px;
+    background-color: var(--background);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overlay-content {
+    overflow-y:scroll;
+    height: 100vh;
+  }
+
+  .about > div {
+  border: none;
+  padding: 0;
+  }
+
+  .about > div:last-child {
+  border-right: none;
+  }
+
+  .info-bar {
+    position: inherit;
+  }
+}
+
+
 
 /* Small Devices, Tables */
 @media only screen and (max-width : 768px) {
+  .about, .overlay-content {
+    height: 100%;
+    max-width: 960px;
+    background-color: var(--background);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay-content {
+    overflow-y:scroll;
+    height: 100vh;
+  }
+
+  .info-bar {
+    position: inherit;
+  }
 
 }
 
