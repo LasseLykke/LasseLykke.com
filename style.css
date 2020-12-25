@@ -13,7 +13,13 @@
   --white-20:rgba(255, 255, 255, 0.8);
   --feature: #e4ab22;
   --primary: #0a0a0a;
-  --underline: #f1f1f1;
+
+  /** NEW COLOR STYLE **/
+
+  --bg: #f9f9f9;
+  --dark-100: #000000;
+  --dark-80: #333333;
+  --feature: #e4ab22;
 
 }
 
@@ -28,7 +34,7 @@ body {
 .landing {
   height: 100vh;
   width: auto;
-  background-color: var(--background);
+  background-color: var(--bg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,8 +48,8 @@ body {
 
 .about-me {
   padding: 20px 40px;
-  color: #ddd;
-  border: 1px solid #333;
+  color: var(--dark-100);
+  border: 1px solid var(--dark-100); /* NEEDS ATT*/
   background: none;
   cursor: pointer;
   text-transform: uppercase;
@@ -52,14 +58,14 @@ body {
 }
 
 .about-me:hover {
-  border: 1px solid #ddd;
+  border: 1px solid var(--feature); /* NEEDS ATT */
 }
 
 
 /*Main container before overlay*/
 .main {
-	background: var(--background);
-	color: white;
+	background: var(--bg);
+	color: var(--dark-80);
 	height: 100vh;
 	padding: 0;
 	margin: 0;
@@ -84,7 +90,7 @@ body {
   position: relative;
 	width: 100%;
   margin-top: 30px;
-  background: var(--primary);
+  background: var(--bg);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
@@ -108,7 +114,7 @@ body {
   top:45px;
   right:45px;
 	font-size:25px !important;
-	color: white;
+	color: var(--dark-100);
   text-decoration: none;
 }
 
@@ -150,7 +156,6 @@ body {
   .about, .overlay-content {
     height: 100%;
     max-width: 960px;
-    background-color: var(--background);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
@@ -185,7 +190,6 @@ body {
   .about, .overlay-content {
     height: 100%;
     max-width: 960px;
-    background-color: var(--background);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
@@ -212,7 +216,6 @@ body {
 .landing {
   height: 100vh;
   width: auto;
-  background-color: var(--background);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,7 +231,6 @@ body {
 .about, .overlay-content {
   height: 100%;
   max-width: 960px;
-  background-color: var(--background);
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 20px;
@@ -257,7 +259,6 @@ border-right: none;
 .landing {
   height: 100vh;
   width: auto;
-  background-color: var(--background);
   display: flex;
   flex-direction: column;
   justify-content: center;

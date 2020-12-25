@@ -13,7 +13,7 @@ Change the color on the hole site.
 Go over to SASS instead off normale CSS. 
 
 **#3:** 
-Remove git folder and codekit3 config file from all branch
+Remove git folder and codekit3 config file from all branch.
 Take local backup before! 
 
 **#4:** 
