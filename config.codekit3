@@ -9,6 +9,27 @@
 	],
 "creatorBuild": "32186",
 "files": {
+	"/images/about.png": {
+		"ft": 32768,
+		"iS": 7446,
+		"oA": 0,
+		"oAP": "/images/about.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/images/about.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/about.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/images/code.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -129,6 +150,38 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/images/male-solid.jpg": {
+		"ft": 16384,
+		"iS": 11010,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/male-solid.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/male-solid.png": {
+		"ft": 32768,
+		"iS": 2204,
+		"oA": 0,
+		"oAP": "/images/male-solid.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/images/male-solid.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/male-solid.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/images/modal-head.jpg": {
 		"ft": 16384,
 		"iS": 180139,
@@ -151,6 +204,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/user-secret-solid.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/user-secret-solid.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -158,16 +221,6 @@
 		"oA": 0,
 		"oAP": "/index.html",
 		"oF": 0
-		},
-	"/main-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/main-min-min.css",
-		"oF": 0,
-		"oS": 3
 		},
 	"/main-min.js": {
 		"bF": 0,
@@ -179,16 +232,6 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
-		},
-	"/main.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/main-min.css",
-		"oF": 0,
-		"oS": 3
 		},
 	"/main.js": {
 		"bF": 0,
