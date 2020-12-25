@@ -2,16 +2,19 @@
 Personal website
 
 
-Refactoring the Site. 
-/ ISSUE 1: 
+## Refactoring the Site. 
+Main goals is to change the site to SASS and make some color changes. 
+
+## ISSUS: 
+#1: 
 Change the color on the hole site. 
 
-/ ISSUE 2: 
+#2: 
 Go over to SASS instead off normale CSS. 
 
-/ ISSUE 3: 
+#3: 
 Remove git folder and codekit3 config file from all branch
 Take local backup before! 
 
-/ ISSUE 4: 
+#4: 
 
