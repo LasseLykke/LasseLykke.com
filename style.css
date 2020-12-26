@@ -41,24 +41,35 @@ body {
   align-items: center;
 }
 
-
-.CTA-btn {
+button {
+	background: transparent;
+	padding: 20px 30px;
+	position: relative;
+	border: 0px;
+	text-transform: uppercase;
+	cursor: pointer;
+  color: black;
   margin-top: 40px;
-  }
-
-.about-me {
-  padding: 20px 40px;
-  color: var(--dark-100);
-  border: 1px solid var(--dark-100); /* NEEDS ATT*/
-  background: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  border-radius: 10rem;
-  transition: 200ms ease-in-out;
 }
 
-.about-me:hover {
-  border: 1px solid var(--feature); /* NEEDS ATT */
+.btn:hover::after{
+	transform: translate(-4px, -4px);
+}
+
+.btn:hover::before{
+	transform: translate(4px, 4px);
+}
+
+.btn::after, .btn::before{
+	border: 0.5px solid black;
+	content: '';
+	position: absolute;
+	border-radius: inherit;
+	width: calc(100% - 6px);
+	height: calc(100% - 6px);
+	left: 0px;
+	bottom: 0px;
+	transition: all 0.2s ease;
 }
 
 
