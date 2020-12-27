@@ -56,7 +56,7 @@ a.Projects:hover:after {
 
 .bigheader {
     color: var(--dark100);
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 800;
     text-transform: uppercase;
     line-height: 1;
@@ -65,10 +65,10 @@ a.Projects:hover:after {
 
 .smallheader {
     color: var(--dark-100);
-    font-size: 0.79rem;
+    font-size: 0.95rem;
     text-transform: uppercase;
     font-weight: 100;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.4px;
     line-height: 0;
 }
 

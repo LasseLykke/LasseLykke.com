@@ -1,1 +1,21 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --bg: #f9f9f9;
+  --dark-100: #000000;
+  --dark-80: #333333;
+  --feature: #e4ab22;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+/*# sourceMappingURL=main.css.map */
