@@ -1,0 +1,13 @@
+.wrapper-container {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    transition: 250ms ease;
+    overflow-y: hidden;
+
+    .overlay-content {
+        
+    }
+}

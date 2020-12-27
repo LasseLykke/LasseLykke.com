@@ -1,3 +1,58 @@
+.landing {
+  height: 100vh;
+  width: auto;
+  background-color: var(--bg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing .main {
+  background: var(--bg);
+  color: var(--dark-80);
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.landing .btn-wrapper {
+  padding-top: 40px;
+}
+
+.landing .btn-wrapper button {
+  background: transparent;
+  padding: 20px 30px;
+  position: relative;
+  border: 0px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--dark-100);
+}
+
+.wrapper-container {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  -webkit-transition: 250ms ease;
+  transition: 250ms ease;
+  overflow-y: hidden;
+}
+
 * {
   scroll-behavior: smooth;
   margin: 0;
