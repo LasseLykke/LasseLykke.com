@@ -6,29 +6,38 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
-    .main {
-        background: var(--bg);
-        color: var(--dark-80);
-        height: 100vh;
-        padding: 0;
-        margin: 0;
-        top: 0;
-        z-index: 0;
-        overflow: hidden;
+button {
+    background: transparent;
+    padding: 20px 30px;
+    position: relative;
+    border: 0px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--dark-100);
+}
+
+.btn-wrapper {
+    padding-top: 40px;
+
+    .btn:hover::after{
+        transform: translate(-4px, -4px);
     }
-
-    .btn-wrapper {
-        padding-top: 40px;
-
-        button {
-            background: transparent;
-            padding: 20px 30px;
-            position: relative;
-            border: 0px;
-            text-transform: uppercase;
-            cursor: pointer;
-            color: var(--dark-100);
-        }
+    
+    .btn:hover::before{
+        transform: translate(4px, 4px);
+    }
+    
+    .btn::after, .btn::before{
+        border: 0.5px solid var(--dark-80);
+        content: '';
+        position: absolute;
+        border-radius: inherit;
+        width: calc(100% - 6px);
+        height: calc(100% - 6px);
+        left: 0px;
+        bottom: 0px;
+        transition: all 0.2s ease;
     }
 }

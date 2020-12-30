@@ -17,22 +17,7 @@
           align-items: center;
 }
 
-.landing .main {
-  background: var(--bg);
-  color: var(--dark-80);
-  height: 100vh;
-  padding: 0;
-  margin: 0;
-  top: 0;
-  z-index: 0;
-  overflow: hidden;
-}
-
-.landing .btn-wrapper {
-  padding-top: 40px;
-}
-
-.landing .btn-wrapper button {
+button {
   background: transparent;
   padding: 20px 30px;
   position: relative;
@@ -42,6 +27,34 @@
   color: var(--dark-100);
 }
 
+.btn-wrapper {
+  padding-top: 40px;
+}
+
+.btn-wrapper .btn:hover::after {
+  -webkit-transform: translate(-4px, -4px);
+          transform: translate(-4px, -4px);
+}
+
+.btn-wrapper .btn:hover::before {
+  -webkit-transform: translate(4px, 4px);
+          transform: translate(4px, 4px);
+}
+
+.btn-wrapper .btn::after, .btn-wrapper .btn::before {
+  border: 0.5px solid var(--dark-80);
+  content: '';
+  position: absolute;
+  border-radius: inherit;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  left: 0px;
+  bottom: 0px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+/* Overlay wrapper style container*/
 .wrapper-container {
   width: 0;
   position: fixed;
@@ -51,6 +64,161 @@
   -webkit-transition: 250ms ease;
   transition: 250ms ease;
   overflow-y: hidden;
+  /* Disable the vertical scroll */
+}
+
+.wrapper-container .overlay-content {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  background: var(--bg);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  margin: 0 auto;
+  padding: 140px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.wrapper-container .about > div {
+  padding: 0px 30px;
+  border-left: none;
+}
+
+.closebtn {
+  position: absolute;
+  top: 45px;
+  right: 45px;
+  font-size: 25px !important;
+  color: var(--dark-80);
+  text-decoration: none;
+}
+
+.info-bar {
+  position: absolute;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-bar .info-bar > div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2px;
+}
+
+.info-bar .link-icon {
+  padding: 15px;
+  padding-bottom: 15px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  margin-bottom: 3px;
+  max-height: 50px;
+  max-width: 50px;
+}
+
+.info-bar .link-icon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.info-bar .link-icon:active {
+  -webkit-transform: translateY(0.5px);
+          transform: translateY(0.5px);
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  font-family: 'Fira Sans', sans-serif;
+  color: var(--dark-100);
+  letter-spacing: 0.4px;
+}
+
+.bigheader {
+  font-size: 5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.smallheader {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  line-height: 1;
+  letter-spacing: 0.5px;
+}
+
+/*Needs new class name! */
+.header_dash {
+  color: var(--feature);
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--dark-80);
+  line-height: 1.45rem;
+  font-weight: 100;
+}
+
+a, .projects {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--dark-80);
+  letter-spacing: 1px;
+  position: relative;
+}
+
+a.projects:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid var(--feature);
+  margin-top: 2px;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+}
+
+a.projects:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+/*color the selected text*/
+::-moz-selection {
+  background-color: var(--bg);
+  color: var(--dark-100);
+}
+::selection {
+  background-color: var(--bg);
+  color: var(--dark-100);
 }
 
 * {

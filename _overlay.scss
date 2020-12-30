@@ -1,13 +1,71 @@
+/* Overlay wrapper style container*/
 .wrapper-container {
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    transition: 250ms ease;
-    overflow-y: hidden;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	transition: 250ms ease;
+    overflow-y: hidden; /* Disable the vertical scroll */
 
     .overlay-content {
-        
+        position: relative;
+          width: 100%;
+        margin-top: 30px;
+        background: var(--bg);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        margin: 0 auto;
+        padding: 140px;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; 
+    }
+
+    .about > div {
+        padding: 0px 30px;
+        border-left: none;
     }
 }
+
+.closebtn{
+    position:absolute;
+    top:45px;
+    right:45px;
+    font-size:25px !important;
+    color: var(--dark-80);
+    text-decoration: none;
+  }
+
+.info-bar {
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+
+  .info-bar > div {
+    align-items: center;
+    padding-top: 2px;
+  }
+
+    .link-icon {
+      padding: 15px;
+      padding-bottom: 15px;
+      transition: 200ms;
+      margin-bottom: 3px;
+      max-height: 50px;
+      max-width: 50px;
+    
+      &:hover {
+        transform:scale(1.2);
+      }
+    
+      &:active {
+        transform: translateY(0.5px);
+      }
+    }
+}
+
