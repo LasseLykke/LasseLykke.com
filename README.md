@@ -25,5 +25,8 @@ Look at the animation on the icons and the alignment of them.
 **#6:** 
 Fix psudo class in fonts. 
 
+**#7:** 
+Remove old css file. Then all is moved over to sass. 
+
 ## Bugs:
 
