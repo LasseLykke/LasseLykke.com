@@ -37,17 +37,15 @@ p {
     font-weight: 100;
 }
 
-a, .projects {
+ .projects {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 800;
     color: var(--dark-80);
     letter-spacing: 1px;
     position: relative;
-}
 
-
-a.projects:after {
+    &:after {
     content: '';
     position: absolute;
     left: 0;
@@ -57,11 +55,12 @@ a.projects:after {
     margin-top: 2px;
     transition: 0.35s;
     transform: scale(0,1);
-}
+    }
 
-a.projects:hover:after {
+    &:hover:after {
         opacity: 1;
         transform: scale(1);
+    }
 }
 
 

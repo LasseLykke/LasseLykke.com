@@ -182,7 +182,7 @@ p {
   font-weight: 100;
 }
 
-a, .projects {
+.projects {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 800;
@@ -191,7 +191,7 @@ a, .projects {
   position: relative;
 }
 
-a.projects:after {
+.projects:after {
   content: '';
   position: absolute;
   left: 0;
@@ -205,7 +205,7 @@ a.projects:after {
           transform: scale(0, 1);
 }
 
-a.projects:hover:after {
+.projects:hover:after {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
