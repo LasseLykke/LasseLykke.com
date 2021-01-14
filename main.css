@@ -24,7 +24,7 @@ button {
   border: 0px;
   text-transform: uppercase;
   cursor: pointer;
-  color: var(--dark-100);
+  color: var(--dark-80);
 }
 
 .btn-wrapper {
@@ -145,7 +145,7 @@ button {
 
 h1, h2, h3, h4, h5, h6, a {
   font-family: 'Fira Sans', sans-serif;
-  color: var(--dark-100);
+  color: var(--dark-80);
   letter-spacing: 0.4px;
 }
 
@@ -186,7 +186,7 @@ p {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 800;
-  color: var(--dark-80);
+  color: var(--dark-100);
   letter-spacing: 1px;
   position: relative;
 }
@@ -231,9 +231,13 @@ p {
 
 :root {
   --bg: #f9f9f9;
+  /*--bg: #0a0a0a;*/
   --dark-100: #000000;
   --dark-80: #333333;
+  /*--dark-80: #595959;*/
   --feature: #e4ab22;
+  --font: #e6e6e6;
+  --fontmain: #f0f0f0;
 }
 
 body {
