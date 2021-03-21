@@ -1,52 +1,58 @@
-h1, h2, h3, h4, h5, h6, a {
-    font-family: 'Fira Sans', sans-serif;
-    color: var(--dark-80);
-    letter-spacing: 0.4px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Fira Sans", sans-serif;
+  color: var(--dark-80);
+  letter-spacing: 0.4px;
 }
 
 .bigheader {
-    font-size: 5rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    line-height: 1;
-    letter-spacing: 0.5px;
+  font-size: 5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.5px;
 }
 
 h2 {
-    text-transform: uppercase;
-    letter-spacing: 1px;   
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .smallheader {
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    font-weight: 100;
-    line-height: 1;
-    letter-spacing: 0.5px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  line-height: 1;
+  letter-spacing: 0.5px;
 }
 
 /*Needs new class name! */
 .header_dash {
-    color: var(--feature);
+  color: var(--feature);
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
-    color: var(--dark-80);
-    line-height: 1.45rem;
-    font-weight: 100;
+  font-family: "Open Sans", sans-serif;
+  color: var(--dark-80);
+  line-height: 1.45rem;
+  font-weight: 100;
 }
 
- .projects {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    color: var(--dark-100);
-    letter-spacing: 1px;
-    position: relative;
+.projects {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--dark-100);
+  letter-spacing: 1px;
+  position: relative;
 
-    &:after {
-    content: '';
+  &:after {
+    content: "";
     position: absolute;
     left: 0;
     height: 1em;
@@ -54,18 +60,17 @@ p {
     border-bottom: 1px solid var(--feature);
     margin-top: 2px;
     transition: 0.35s;
-    transform: scale(0,1);
-    }
+    transform: scale(0, 1);
+  }
 
-    &:hover:after {
-        opacity: 1;
-        transform: scale(1);
-    }
+  &:hover:after {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /*color the selected text*/
 ::selection {
-    background-color: var(--bg);
-    color: var(--dark-100);
+  background-color: var(--bg);
+  color: var(--dark-100);
 }
-

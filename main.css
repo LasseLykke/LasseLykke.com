@@ -143,8 +143,14 @@ button {
           transform: translateY(0.5px);
 }
 
-h1, h2, h3, h4, h5, h6, a {
-  font-family: 'Fira Sans', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Fira Sans", sans-serif;
   color: var(--dark-80);
   letter-spacing: 0.4px;
 }
@@ -176,7 +182,7 @@ h2 {
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: var(--dark-80);
   line-height: 1.45rem;
   font-weight: 100;
@@ -192,7 +198,7 @@ p {
 }
 
 .projects:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   height: 1em;
