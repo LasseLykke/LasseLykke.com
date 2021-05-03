@@ -1,0 +1,30 @@
+.info-bar {
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+
+  .info-bar > div {
+    align-items: center;
+    padding-top: 2px;
+  }
+
+  .link-icon {
+    padding: 15px;
+    padding-bottom: 15px;
+    transition: 200ms;
+    margin-bottom: 3px;
+    max-height: 50px;
+    max-width: 50px;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transform: translateY(0.5px);
+    }
+  }
+}
